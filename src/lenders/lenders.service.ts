@@ -11,7 +11,7 @@ export class LendersService {
   ) {}
 
   async getLenders() {
-    return this.database.query.lenders.findMany()
+    return this.database.query.lenders.findMany({ with: { products: true } })
   }
 
   async createLender(lender: typeof schema.lenders.$inferInsert) {

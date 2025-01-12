@@ -8,10 +8,14 @@ export class ProductsService {
   constructor(@Inject(DATABASE_CONNECTION) private readonly database: NodePgDatabase<typeof schema>) {}
 
   async getProducts() {
-    return this.database.query.products.findMany()
+    return this.database.query.products.findMany({ with: { lender: true } })
   }
 
   async createProduct(post: typeof schema.products.$inferInsert) {
-    return this.database.insert(schema.products).values(post)
+    return this.database
+      .insert(schema.products)
+      .values(post)
+      .returning()
+      .then((res) => res[0])
   }
 }
