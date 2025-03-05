@@ -1,1 +1,0 @@
-ALTER TABLE "lenders" DROP COLUMN "created_at";

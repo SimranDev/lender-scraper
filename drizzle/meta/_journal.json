@@ -5,43 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1736557078569,
-      "tag": "0000_lethal_energizer",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1736564319551,
-      "tag": "0001_nice_omega_sentinel",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1736565647872,
-      "tag": "0002_sweet_tyrannus",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1736565835023,
-      "tag": "0003_glossy_norman_osborn",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1736567324434,
-      "tag": "0004_colorful_lady_vermin",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1736568155578,
-      "tag": "0005_quick_johnny_blaze",
+      "when": 1741075705849,
+      "tag": "0000_gorgeous_klaw",
       "breakpoints": true
     }
   ]
