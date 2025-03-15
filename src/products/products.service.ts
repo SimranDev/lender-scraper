@@ -11,10 +11,10 @@ export class ProductsService {
     return this.database.query.products.findMany({ with: { lender: true } })
   }
 
-  async createProduct(post: typeof schema.products.$inferInsert) {
+  async createProduct(product: typeof schema.products.$inferInsert) {
     return this.database
       .insert(schema.products)
-      .values(post)
+      .values(product)
       .returning()
       .then((res) => res[0])
   }
