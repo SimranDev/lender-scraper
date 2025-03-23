@@ -5,6 +5,7 @@ import { Pool } from 'pg'
 import { drizzle } from 'drizzle-orm/node-postgres'
 import * as lenderSchema from '../lenders/schema'
 import * as productSchema from '../products/schema'
+import * as ratesSchema from '../rates/schema'
 
 @Module({
   imports: [],
@@ -20,6 +21,7 @@ import * as productSchema from '../products/schema'
           schema: {
             ...lenderSchema,
             ...productSchema,
+            ...ratesSchema,
           },
         })
       },
