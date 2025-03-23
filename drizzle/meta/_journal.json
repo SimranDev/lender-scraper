@@ -15,6 +15,13 @@
       "when": 1742002572607,
       "tag": "0001_mighty_nehzno",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1742698868227,
+      "tag": "0002_sleepy_mastermind",
+      "breakpoints": true
     }
   ]
 }
