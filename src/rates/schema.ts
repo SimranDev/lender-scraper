@@ -1,9 +1,9 @@
 import { relations } from 'drizzle-orm'
-import { decimal, pgTable, timestamp, uuid, varchar } from 'drizzle-orm/pg-core'
+import { decimal, pgTable, serial, timestamp, uuid, varchar } from 'drizzle-orm/pg-core'
 import { products } from 'src/products/schema'
 
 export const rates = pgTable('rates', {
-  id: uuid('id').defaultRandom().primaryKey(),
+  id: serial('id').primaryKey(),
   productId: uuid('product_id')
     .notNull()
     .references(() => products.id, { onDelete: 'cascade' }),
