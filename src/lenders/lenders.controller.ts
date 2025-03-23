@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common'
 import { LendersService } from './lenders.service'
-import { CreateUserRequest } from './dto/create-user.request'
+import { CreateLenderRequest } from './dto/create-lender.request'
 
 @Controller('lenders')
 export class LendersController {
@@ -12,7 +12,7 @@ export class LendersController {
   }
 
   @Post()
-  async createLender(@Body() request: CreateUserRequest) {
-    return this.lendersService.createLender(request)
+  async createLender(@Body() req: CreateLenderRequest) {
+    return this.lendersService.createLender(req)
   }
 }
